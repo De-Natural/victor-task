@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index2.css">
+</head>
+<body>
+
+    <h2>Hello</h2>
+    <p>you are welcome to the signing page, hopefully you will reach your goal</p>
+    <br>
+    <div class="point">
+        <marquee behavior="" direction="">
+            <span>kindly click the button below to proceed, good luck</span>
+        </marquee>
+    </div>
+    <br><br>
+
+    <button onclick="myfunction()">let's go!!</button>
+    <div id="assembly">
+        <form id="main">
+
+            <div>
+            <label for="fname">Your name</label>
+            <input type="text" id="demo" name="fname" maxlength="20px">
+            </div>
+
+            
+            <input type="submit" value="ok" id="sob" onclick="changeOne()">
+            <br><br>
+            <input type="reset" value="clear" id="seb">
+            
+        </form>
+
+        <fieldset id="art">
+            
+            <div>
+                <label for="age" id="old">your age</label><br>
+                <input type="tel" id="sub" maxlength="8px" size="35px">
+            </div>
+
+            <input type="submit" id="sib" onclick="nextPage()">
+        </fieldset>
+    </div>
+    <script>
+        function myfunction(){
+            let element = document.getElementById("main");
+            element.style.display = 'block';
+        }
+
+        let post = document.getElementById("art");
+        let text = document.getElementById('old');
+        let input = document.getElementById('sob');
+        let egg = document.getElementById("assembly");
+
+        function changeOne(){
+            let name = document.getElementById('demo');
+            let post = document.getElementById("art");
+            let element = document.getElementById("main");
+            assembly.replaceChild(post,element);
+            // element.style.display = 'none',
+             post.style.display = 'block';
+        }
+
+        let p = document.createElement('p');
+        p.innerText = "Well ehh m i think you are not eligble to contiune"
+        let J = document.createElement('h3');
+        J.innerText = "please tell us your age!"
+
+        function nextPage(){
+            let next = document.getElementById('sib');
+            let airdrop = document.getElementById('sub');
+            let fan = airdrop.value
+            if (fan > 0 && fan < 12){
+                console.log("emps")
+                p.id = 'color'
+                egg.appendChild(p);
+            }
+            else if(fan === "") {
+                J.id = 'cap'
+                console.log("empty")
+                egg.appendChild(J);
+            }
+            else {
+                window.location.href = "index3.html"
+            }
+        }
+    </script>
+   
+</body>
+</html>

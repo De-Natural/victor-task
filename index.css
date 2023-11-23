@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    /* color: aliceblue;
+    font-style: italic; */
+}
+
+nav{
+    background-color: aqua;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    top: 0px;  
+}
+.logo{
+    color: green;
+    font-size: 35px;
+    padding: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 1px;
+    /* border: 1px solid red; */
+    height: 0.2px;
+    width: 350px;
+    margin-left: 10px;
+    /* background-image: url(/tree\ 1.jpg); */
+    background-size: cover;
+}
+.logo span{
+    top: 30px;
+    bottom: 20px;
+    position: absolute;
+    left: 30%;
+}
+#tree{
+    height: 50px;
+    width: 50px;
+    color: green;
+    top: 30px;
+    position: absolute;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    position: absolute;
+    right: 1%;
+    bottom: 10%;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    bottom: 20px;
+}
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+.vid{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(95, 136, 136);
+}
+video{
+    width: 100vw;
+    height: inherit;
+
+}
+.para{
+    position: absolute;
+    text-align: justify;
+    font-size: 30px;
+    color: rebeccapurple;
+    top: 40%;
+    height: 250px;
+    width: 800px;
+    border: 1p solid red;
+    place-self: center;
+    right: 30%;
+}
+.para p{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 9px 9px 3px gold, -9px -9px -3px white;
+    opacity: 0.5;
+    font-style: italic;
+}
+
+
+@media (max-width: 900px){
+    .logo{
+        height: 40px;
+        width: 60px;
+    }
+    nav ul li{
+        font-size: 16px;
+    }
+    #tree{
+        font-size: 40px;
+        padding-left: 50px;
+    }
+}
+@media (max-width: 750px) {
+   .logo{
+    display: block;
+   }
+   ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: lightblue;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    transition: all.1m;
+   } 
+   nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    font-size: 70px;
+   }
+   nav ul li a{
+    font-size: 20px;
+   }
+}

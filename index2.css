@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    padding: 50px;
+    background-image: url(/forest\ 1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    height: 150px;
+    width: 450px;
+    /* border: 1px solid red; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: bisque;
+    display: none;
+}
+
+#demo{
+    height: 35px;
+    width: 300px;
+    margin-bottom: 1rem;
+    outline: none;
+}
+#sub{
+    height: 30px;
+    width: 65px;
+    outline: none;
+    margin-bottom: 1rem;
+}
+#sob{
+    height: 25px;
+    width: 65px;
+    right: 77%;
+    position: absolute;
+    margin-top: 45px;
+}
+#seb{
+    height: 25px;
+    width: 65px;
+    left: 70px;
+    position: absolute;
+    margin-top: 13px;
+}
+h2{
+    font-size: 100px;
+    /* text-decoration: overline; */
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: yellowgreen;
+    /* margin-left: 100px; */
+}
+p{
+    font-size: 30px;
+    font-style: italic;
+    /* margin-left: 100px; */
+}
+span{
+    font-size: 18px;
+}
+.point{
+    width: 250px;
+    /* border: 1px solid red; */
+    margin-left: 800px;
+}
+button{
+    height: 30px;
+    width: 70px;
+    cursor: pointer;
+    border: none;
+}
+fieldset{
+    height: 180px;
+    width: 450px;
+    /* border: 1px solid red; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: bisque;
+    display: none; 
+}
+#old{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 2px;
+}
+#sub{
+    height: 34px;
+    width: 250px;
+    margin-top: 10px;
+}
+#sib{
+    height: 40px;
+    width: 70px;
+    margin-top: 5px;
+}
+#color{
+    font-size: 40px;
+    color: orchid;
+    /* font-variant: small-caps; */
+    font-style: italic;
+}
+#cap{
+    font-size: 40px;
+    color: red;
+    font-variant: small-caps;
+    font-style: italic; 
+}
